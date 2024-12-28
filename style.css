@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  background-image: url("https://cdn.discordapp.com/attachments/977182995159085077/1127500483339227226/b9f904ae-9c08-4ee1-ab7e-6e8002a51e37.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.paper {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Rest of the CSS properties for .paper */
+}
+
+.paper.heart::after {
+  /* Rest of the CSS properties for .paper.heart::after */
+  opacity: 0.4;
+}
+
+
+/* Additional CSS for romantic decorations */
+/* Add your own images or styles for romantic decorations */
+
+
+.paper {
+  background-image: url("https://cdn.discordapp.com/attachments/977182995159085077/1127504040062877797/3853d118-4347-4cbd-821e-feb02083e75b.jpeg");
+  background-size: 2000px;
+  background-position: center center;
+  padding: 20px 100px;
+  //min-width: 800px; it 
+  
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 80px;
+  
+}
+.paper.image p {
+  font-size: 80px;
+}
+
+img {
+  max-height: 300px;
+  width: 100%;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.paper.red {
+/*   filter: hue-rotate(90deg); */
+}
+.paper:nth-of-type(3n) {
+  background-position: left top;
+}
+.paper:nth-of-type(3n) {
+/*   filter: hue-rotate(200deg); */
+}
+
+p {
+  font-family: 'Zeyada';
+  font-size: 80px;
+  color: white;
+  opacity: 0.75;
+  user-select: none;
+  
+  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+}
