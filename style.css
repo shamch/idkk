@@ -5,23 +5,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #3a2f0b 0%, #1a1608 100%);
-  background-attachment: fixed;
-  overflow-x: hidden;
-  padding: 20px;
+  background-color: #222;
+  background-image: url("https://cdn.discordapp.com/attachments/977182995159085077/1127500483339227226/b9f904ae-9c08-4ee1-ab7e-6e8002a51e37.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .paper {
-  background: linear-gradient(135deg, rgba(218, 165, 32, 0.95) 0%, rgba(184, 134, 11, 0.95) 100%);
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Rest of the CSS properties for .paper */
+}
+
+.paper.heart::after {
+  /* Rest of the CSS properties for .paper.heart::after */
+  opacity: 0.4;
+}
+
+
+/* Additional CSS for romantic decorations */
+/* Add your own images or styles for romantic decorations */
+
+
+.paper {
+  background-image: url("https://cdn.discordapp.com/attachments/977182995159085077/1127504040062877797/3853d118-4347-4cbd-821e-feb02083e75b.jpeg");
+  background-size: 2000px;
   background-position: center center;
-  padding: 30px 50px;
-  max-width: 90vw;
+  padding: 20px 100px;
+  //min-width: 800px; it 
+  
   transform: rotateZ(-5deg);
-  box-shadow: 2px 20px 30px 0px rgba(0,0,0,0.6);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
   position: absolute;
-  border: 2px solid rgba(255, 215, 0, 0.3);
-  border-radius: 8px;
 }
 
 .paper.heart {
@@ -33,21 +48,17 @@ body {
 }
 
 .paper.image {
-  padding: 40px 30px;
+  padding: 80px;
+  
 }
-
 .paper.image p {
-  font-size: clamp(24px, 5vw, 80px);
+  font-size: 80px;
 }
 
 img {
   max-height: 300px;
   width: 100%;
-  max-width: 100%;
-  height: auto;
   user-select: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .paper.heart::after {
@@ -65,64 +76,21 @@ img {
 }
 
 .paper.red {
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.95) 0%, rgba(218, 165, 32, 0.95) 100%);
+/*   filter: hue-rotate(90deg); */
 }
-
 .paper:nth-of-type(3n) {
   background-position: left top;
+}
+.paper:nth-of-type(3n) {
+/*   filter: hue-rotate(200deg); */
 }
 
 p {
   font-family: 'Zeyada';
-  font-size: clamp(28px, 6vw, 80px);
-  color: #1a1608;
-  opacity: 0.9;
+  font-size: 80px;
+  color: white;
+  opacity: 0.75;
   user-select: none;
-  text-shadow: 1px 1px 2px rgba(255, 215, 0, 0.3);
-  line-height: 1.4;
-  word-wrap: break-word;
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .paper {
-    padding: 20px 25px;
-    max-width: 85vw;
-  }
-
-  .paper.image {
-    padding: 25px 20px;
-  }
-
-  .paper.heart {
-    width: 150px;
-    height: 150px;
-  }
-
-  img {
-    max-height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .paper {
-    padding: 15px 20px;
-    max-width: 90vw;
-  }
-
-  .paper.image {
-    padding: 20px 15px;
-  }
-
-  .paper.heart {
-    width: 120px;
-    height: 120px;
-  }
-
-  img {
-    max-height: 150px;
-  }
+  
+  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }
